@@ -7,8 +7,8 @@ import numpy as np
 import yfinance as yf
 import csv
 st.markdown("<h1 style='text-align: center; color: #4C4C6D;'>Stock Comparison 🌱</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; font-weight: lighter; color: #FF8243; '><i><a style='text-decoration: none; color: #E26A2C;' target='_blank' href='https://twitter.com/hoodie_coder'>Nodebanker ⚡️</a></i></h4>", unsafe_allow_html=True)
-st.write(" ")
+st.markdown("<h4 style='text-align: center; font-weight: lighter; color: #FF8243; '><i><a style='text-decoration: none; color: #FF8243;' target='_blank' href='https://twitter.com/hoodie_coder'>Nodebanker ⚡️</a></i></h4>", unsafe_allow_html=True)
+st.write("-------------------------------------------------------- ")
 file = open('tickers.csv')
 tickers = (pd.read_csv(file))
 dropdown = st.multiselect("Pick Stock Ticker(s):", tickers)

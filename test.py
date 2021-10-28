@@ -12,7 +12,7 @@ st.write("-------------------------------------------------------- ")
 file = open('tickers.csv')
 tickers = (pd.read_csv(file))
 dropdown = st.multiselect("Pick Stock Ticker(s):", tickers)
-start = st.date_input('Select Start', value = pd.to_datetime('2021-01-01'))
+start = st.date_input('Select Start', value = pd.to_datetime('2020-01-01'))
 end = st.date_input('Select End', value = pd.to_datetime('today'))
 def relativeret(df):
     rel = df.pct_change()

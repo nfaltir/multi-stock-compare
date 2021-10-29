@@ -19,17 +19,20 @@ tickers = (pd.read_csv(file))
 stock_options = st.multiselect("Pick Stock Ticker(s):", tickers)
 start = st.date_input('Select Start', value = pd.to_datetime('2020-01-01'))
 end = st.date_input('Select End', value = pd.to_datetime('today'))
+
 def relative_return(df):
     rel = df.pct_change()
     cumret = (1+rel).cumprod() - 1
     cumret = cumret.fillna(0)
     return cumret
 
-    
+
 if len(stock_options) > 0:
+
     closingPrice = yf.download(stock_options,start,end)['Adj Close']
     stock_returns = relative_return(yf.download(stock_options,start,end)['Adj Close']) 
     volume = yf.download(stock_options,start,end)['Volume']
+   
     st.write("### Closing Price")
     st.line_chart(closingPrice)
     st.write("### Returns")

@@ -1,4 +1,4 @@
-#!/Users/atlas/Desktop/nodebanker/env/bin/python3
+#!/Users/atlas/Desktop/resume_ready/multi-stock-compare/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

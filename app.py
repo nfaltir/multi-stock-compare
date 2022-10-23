@@ -5,8 +5,9 @@ import matplotlib as plt
 import yfinance as yf
 import csv
 
-st.markdown("<h1 style='text-align: center; color: #4C4C6D;'>Stock Comparison 🌱</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; font-weight: lighter; color: #FF8243; '><i><a style='text-decoration: none; color: #FF8243;' target='_blank' href='https://twitter.com/hoodie_coder'>Nodebanker ⚡️</a></i></h4>", unsafe_allow_html=True)
+st.set_page_config(page_title="Stonks", page_icon="🌱")
+st.markdown("<h1 style='text-align: center; color: #5837D0;'>🌱Stock Comparison🌱</h1>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; font-weight: lighter; color: #FF8243; '><strong><a style='text-decoration: none; color: #749F82;' target='_blank' href='https://github.com/nfaltir/multi-stock-compare'>Github</a></strong></h4>", unsafe_allow_html=True)
 st.write("-------------------------------------------------------- ")
 
 

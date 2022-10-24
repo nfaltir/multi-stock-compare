@@ -36,6 +36,10 @@ Setup Config
 
 <br>
 
+# [Live Demo](https://nfaltir-multi-stock-compare-app-74c5fk.streamlitapp.com/) 👈
+
+<br>
+
 <br><i>Closing Price</i>
 <img src="./imgs/close.png"
      alt="example-energy"

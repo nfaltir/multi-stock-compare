@@ -23,6 +23,8 @@ Features
 1. compare multiple stocks closing prices
 2. stock returns
 3. trading volume
+4. Expand chart window and save chart image
+5. 7825 tickers to choose from (some may not work based on the timeframe given)
 
 
 

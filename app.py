@@ -6,18 +6,34 @@ import yfinance as yf
 import csv
 
 st.set_page_config(page_title="Stonks", page_icon="🌱")
-st.markdown("<h1 style='text-align: center; color: #5837D0;'>Stock Comparison</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; font-weight: lighter; color: #FF8243; '><strong><a style='text-decoration: none; color: #749F82;' target='_blank' href='https://github.com/nfaltir/multi-stock-compare'>Github</a></strong></h4>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center; border-radius:10px; color:white; background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); font-size:64px;'>Stock Performance</h1>", unsafe_allow_html=True)
 st.write("-------------------------------------------------------- ")
 
 
-file = open('nasdaq.csv')
+file = open('data/nasdaq.csv')
 tickers = (pd.read_csv(file))
 
 
-start = st.date_input('Select Start', value = pd.to_datetime('2020-01-01'))
-end = st.date_input('Select End', value = pd.to_datetime('today'))
-stock_options = st.multiselect("Pick or Enter a Stock Ticker(s):", tickers)
+stock_options = st.multiselect("Enter a Stock Ticker(s):", tickers)
+
+# Create 3 columns
+col1, col2, col3 = st.columns(3)
+
+# Add content to the first column
+with col1:
+    st.write("")
+    start = st.date_input('Select Start', value = pd.to_datetime('2020-01-01'))
+
+# Add content to the second column
+with col2:
+    st.write("")
+    st.write("")
+
+with col3:
+    st.write("")
+    end = st.date_input('Select End', value = pd.to_datetime('today'))
+
+
 
 
 def relative_return(df):
@@ -26,7 +42,7 @@ def relative_return(df):
     cumret = cumret.fillna(0)
     return cumret
 
-
+st.write("-------------------------------------------------------- ")
 if len(stock_options) > 0:
 
     closingPrice = yf.download(stock_options,start,end)['Adj Close']
@@ -42,4 +58,4 @@ if len(stock_options) > 0:
     st.bar_chart(volume)
   
 
-
+st.markdown("<h4 style='text-align: center; margin-top:400px; font-weight: light;'><strong><a style='text-decoration: none; color:orangered;' target='_blank' href='https://github.com/nfaltir/multi-stock-compare'>⚙️</a></strong></h4>", unsafe_allow_html=True)

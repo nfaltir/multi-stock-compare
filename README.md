@@ -1,6 +1,12 @@
 Stock Comparison Dashboard
 ===========================
 
+<br>
+
+<br><i>Closing Price</i>
+<img src="./imgs/overview.png"
+     alt="example-energy"
+     style="float: left; margin-right: 10px; margin-bottom: 50px;" />
 
 
 <br>

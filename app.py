@@ -58,4 +58,4 @@ if len(stock_options) > 0:
     st.bar_chart(volume)
   
 
-st.markdown("<h4 style='text-align: center; margin-top:400px; font-weight: light;'><strong><a style='text-decoration: none; color:orangered;' target='_blank' href='https://github.com/nfaltir/multi-stock-compare'>⚙️</a></strong></h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; margin-top:400px; font-weight: light;'><strong><a style='text-decoration: none; color:salmon;' target='_blank' href='https://github.com/nfaltir/multi-stock-compare'>GITHUB ⚙️</a></strong></h4>", unsafe_allow_html=True)

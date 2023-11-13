@@ -10,7 +10,7 @@ st.markdown("<h1 style='text-align:center; border-radius:10px; color:white; font
 st.write("-------------------------------------------------------- ")
 
 
-file = open('data/stocks.csv')
+file = open('stocks.csv')
 tickers = (pd.read_csv(file))
 
 

@@ -44,7 +44,7 @@ Setup Config
 
 <br>
 
-# [Live Demo](https://nfaltir-multi-stock-compare-app-74c5fk.streamlitapp.com/) 👈
+
 
 <br>
 

@@ -10,7 +10,7 @@ st.markdown("<h1 style='text-align:center; border-radius:10px; color:white; font
 st.write("-------------------------------------------------------- ")
 
 
-file = open('stocks.csv')
+file = open('data/stocks.csv')
 tickers = (pd.read_csv(file))
 
 
@@ -22,7 +22,7 @@ col1, col2, col3 = st.columns(3)
 # Add content to the first column
 with col1:
     st.write("")
-    start = st.date_input('Select Start', value = pd.to_datetime('2020-01-01'))
+    start = st.date_input('Select Start', value = pd.to_datetime('2023-01-01'))
 
 # Add content to the second column
 with col2:

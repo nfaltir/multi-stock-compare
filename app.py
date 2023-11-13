@@ -6,7 +6,7 @@ import yfinance as yf
 import csv
 
 st.set_page_config(page_title="Stonks", page_icon="🌱")
-st.markdown("<h1 style='text-align:center; border-radius:10px; color:white; background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); font-size:64px;'>Stock Performance</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center; border-radius:10px; color:white; font-size:64px;'>Stock Performance</h1>", unsafe_allow_html=True)
 st.write("-------------------------------------------------------- ")
 
 
